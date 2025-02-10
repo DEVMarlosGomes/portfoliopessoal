@@ -12,7 +12,7 @@
     <header>
         <div class="logo-container">
             <a href="index.html">
-                <img src="LogoPessoal.png" width="200" height="200" alt="Logo" class="logo">
+                <img src="LogoPessoal.png" width="200" height="250" alt="Logo" class="logo">
             </a>
         </div>
         <nav>
@@ -22,7 +22,6 @@
         </nav>
     </header>
 
-    <!-- Seção de Projetos com Repositórios GitHub -->
     <section class="projects-section">
         <h2>Meus Projetos no GitHub</h2>
         <div class="projects-container" id="projects-container">
@@ -30,15 +29,12 @@
         </div>
     </section>
 
-
     <script>
-        // Função para carregar projetos do GitHub
         const getGitHubProjects = async () => {
-            const user = 'DEVMarlosGomes';  // Substitua pelo seu nome de usuário no GitHub
-            const repoCount = 3; // Quantidade de repositórios a exibir
+            const user = 'DEVMarlosGomes';
+            const repoCount = 3;
 
             try {
-                // Requisição para pegar os repositórios públicos do GitHub
                 const response = await fetch(`https://api.github.com/users/${user}/repos?per_page=${repoCount}`);
                 const data = await response.json();
 
@@ -46,13 +42,13 @@
                 data.forEach((repo) => {
                     const projectDiv = document.createElement('div');
                     projectDiv.classList.add('project');
-                    
+
                     projectDiv.innerHTML = `
                         <h3>${repo.name}</h3>
                         <p>${repo.description || 'Sem descrição disponível'}</p>
                         <a href="${repo.html_url}" target="_blank">Ver repositório no GitHub</a>
                     `;
-                    
+
                     projectsContainer.appendChild(projectDiv);
                 });
             } catch (error) {
@@ -60,13 +56,11 @@
             }
         };
 
-        // Carregar os projetos ao carregar a página
         window.onload = getGitHubProjects;
     </script>
 
-
-<footer>
-    <p>&copy; 2025 MARLOS GOMES / Todos os direitos reservados.</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 MARLOS GOMES / Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

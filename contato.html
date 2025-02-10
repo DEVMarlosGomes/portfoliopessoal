@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="LogoPessoal.png" type="image/x-icon">
     <script>
-        // Função para alternar entre o modo claro e escuro
         function toggleDarkMode() {
             const body = document.body;
             body.classList.toggle('dark-mode');
@@ -16,7 +15,6 @@
 </head>
 <body>
 
-    <!-- Cabeçalho -->
     <header>
         <div class="logo-container">
             <a href="index.html">
@@ -24,23 +22,26 @@
                 <h1>Marlos Gomes</h1>
             </a>
         </div>
-        <button onclick="toggleDarkMode()">Alterar Modo</button> <!-- Botão para alternar entre modo claro e escuro -->
+        <nav>
+            <a href="index.html"><strong>INÍCIO</strong></a>
+            <a href="contato.html"><strong>CONTATO</strong></a>
+            <a href="projetos.html"><strong>PROJETOS</strong></a>
+        </nav>
+        <button onclick="toggleDarkMode()">Alterar Modo</button>
     </header>
 
-    <!-- Seção de Redes Sociais -->
     <div class="social-buttons">
         <a href="https://github.com/DEVMarlosGomes" target="_blank" class="social-button github-button">
-            <img src="github-icon.png" alt="GitHub"> GitHub
+            <img src="logogit.png" alt="GitHub"> GitHub
         </a>
         <a href="https://www.instagram.com/_corretormarlosgomes/" target="_blank" class="social-button instagram-button">
-            <img src="instagram-icon.png" alt="Instagram"> Instagram
+            <img src="Instagram_icon.png" alt="Instagram"> Instagram
         </a>
         <a href="https://www.linkedin.com/in/marlos-gomes-b77952320/" target="_blank" class="social-button linkedin-button">
-            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+            <img src="png-transparent-social-media-linkedin-computer-icons-logo-facebook-shelf-drum-blue-text-rectangle-thumbnail.png" alt="LinkedIn"> LinkedIn
         </a>
     </div>
 
-    <!-- Seção de Contato -->
     <div class="container">
         <h2>Entre em Contato</h2>
         <p>Se você tiver dúvidas, sugestões ou precisar de mais informações sobre meus serviços, estou à disposição!</p>
@@ -54,7 +55,6 @@
         </ul>
     </div>
 
-    <!-- Seção de Envio de Mensagem -->
     <div class="pers-contato">
         <h3>Envie uma Mensagem</h3>
         <form action="mensagem-enviada.html" method="get">
@@ -71,12 +71,10 @@
         </form>
     </div>
 
-    <!-- Botão do WhatsApp -->
     <a href="https://api.whatsapp.com/send?phone=5511978242396" class="whatsapp-button" target="_blank">
         <img src="whatsapp-icon.png" alt="WhatsApp" />
     </a>
 
-    <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 Marlos Gomes / Todos os direitos reservados.</p>
     </footer>
