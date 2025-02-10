@@ -1,0 +1,255 @@
+/* Variáveis de cores */
+:root {
+    --color-primary-light: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-bg-light: #ffffff;
+    --color-bg-dark: #121212;
+    --color-text-light: #333333;
+    --color-text-dark: #f1f1f1;
+    --color-header-bg-light: #f8f9fa;
+    --color-header-bg-dark: #343a40;
+    --color-footer-bg-light: #f8f9fa;
+    --color-footer-bg-dark: #343a40;
+    --color-button-light: #007bff;
+    --color-button-dark: #0056b3;
+}
+
+/* Reset CSS e layout básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-header-bg-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+body.dark-mode header {
+    background-color: var(--color-header-bg-dark);
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    width: 200px;
+    height: auto;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+body.dark-mode header nav a {
+    color: var(--color-text-dark);
+}
+
+header nav a:hover {
+    color: var(--color-primary-light);
+}
+
+header button {
+    background-color: var(--color-button-light);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+body.dark-mode header button {
+    background-color: var(--color-button-dark);
+}
+
+body.dark-mode header button:hover {
+    background-color: var(--color-primary-light);
+}
+
+/* Seções principais */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+section p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.social-buttons .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.social-buttons .social-button:hover {
+    background-color: var(--color-primary-light);
+}
+
+.social-buttons .social-button img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Cards de serviços e projetos */
+.services-container, .projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service, .project {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--color-bg-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .service, body.dark-mode .project {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.service img, .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service h3, .project h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+/* GitHub botão */
+.github-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-light);
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.github-button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* Formulários e botões */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-bg-light);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    background-color: #f9f9f9;
+}
+
+form button {
+    background-color: var(--color-primary-light);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-footer-bg-light);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode footer {
+    background-color: var(--color-footer-bg-dark);
+    color: var(--color-text-dark);
+}
+
+/* Modos claro e escuro */
+body.dark-mode header {
+    background-color: var(--color-header-bg-dark);
+}
+
+body.dark-mode footer {
+    background-color: var(--color-footer-bg-dark);
+}

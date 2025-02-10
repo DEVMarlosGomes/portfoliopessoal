@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - MARLOS GOMES</title>
+    <link rel="shortcut icon" href="LogoPessoal.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Função para alternar entre o modo claro e escuro
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo-container">
+            <img src="LogoPessoal.png" width="200" height="250" alt="Logo de Marlos Gomes" class="logo">
+        </div>
+        <nav>
+            <a href="contato.html"><strong>CONTATO</strong></a>
+            <a href="projetos.html"><strong>PROJETOS</strong></a>
+            <a href="sobre mim.html"><strong>SOBRE MIM</strong></a>
+        </nav>
+        <button onclick="toggleDarkMode()">Alterar Modo</button> <!-- Botão para alternar entre modo claro e escuro -->
+    </header>
+
+    <!-- Seção de Apresentação -->
+    <section class="intro" id="about">
+        <div class="intro-text">
+            <h2>Quem é Marlos Gomes?</h2>
+            <p>Sou Marlos Gomes, um jovem corretor de imóveis e entusiasta na área de Desenvolvimento de Sistemas. Com 22 anos, estou no caminho para concluir meu curso de Desenvolvimento de Sistemas no SENAI Morvan Figueiredo e iniciar minha carreira na área de TI. Tenho experiência em front-end e estou começando a trabalhar com banco de dados.</p>
+        </div>
+        <div class="intro-img">
+            <img width="700" height="350" src="Quem é Marlos Gomes.png" alt="Marlos Gomes">
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="services" id="services">
+        <h2>Minhas Habilidades</h2>
+        <div class="services-container">
+            <div class="service">
+                <img width="300" height="200" src="comunicação.jpg" alt="Comunicação">
+                <h3>Comunicação</h3>
+                <p>Com uma sólida experiência nas áreas de vendas, possuo uma comunicação eficaz, o que facilita a colaboração em equipe, especialmente com o uso do método Scrum.</p>
+            </div>
+            <div class="service">
+                <img width="300" height="200" src="aprendizado.jpg" alt="Fácil Aprendizado">
+                <h3>Facilidade de Aprendizado</h3>
+                <p>Sou altamente motivado a aprender novos conceitos e habilidades. Sempre busco expandir meus conhecimentos além do que é transmitido, focando no aprendizado contínuo.</p>
+            </div>
+            <div class="service">
+                <img width="300" height="200" src="scrum.jpg" alt="SCRUM">
+                <h3>Praticidade em Solução de Problemas</h3>
+                <p>Minha experiência como corretor me ajudou a desenvolver uma grande habilidade para identificar e resolver problemas rapidamente, o que é fundamental para garantir a continuidade do trabalho sem grandes interrupções.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integração com GitHub -->
+    <section class="github">
+        <h2>Meus Repositórios no GitHub</h2>
+        <p>Acesse meus repositórios no GitHub para ver projetos desenvolvidos por mim:</p>
+        <div class="github-container">
+            <a href="https://github.com/DEVMarlosGomes" target="_blank" class="github-button">
+                <img src="logogit.png" alt="GitHub Logo" class="github-img">
+                <div class="github-btn-text">
+                    <h3>Visite meu perfil no GitHub</h3>
+                    <p>Veja os projetos que estou desenvolvendo!</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5511978242396" class="whatsapp-button" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp" />
+    </a>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Marlos Gomes / Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

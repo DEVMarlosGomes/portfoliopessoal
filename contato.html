@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Marlos Gomes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="LogoPessoal.png" type="image/x-icon">
+    <script>
+        // Função para alternar entre o modo claro e escuro
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="LogoPessoal.png" width="200" height="250" alt="Logo de Marlos Gomes" class="logo">
+                <h1>Marlos Gomes</h1>
+            </a>
+        </div>
+        <button onclick="toggleDarkMode()">Alterar Modo</button> <!-- Botão para alternar entre modo claro e escuro -->
+    </header>
+
+    <!-- Seção de Redes Sociais -->
+    <div class="social-buttons">
+        <a href="https://github.com/DEVMarlosGomes" target="_blank" class="social-button github-button">
+            <img src="github-icon.png" alt="GitHub"> GitHub
+        </a>
+        <a href="https://www.instagram.com/_corretormarlosgomes/" target="_blank" class="social-button instagram-button">
+            <img src="instagram-icon.png" alt="Instagram"> Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/marlos-gomes-b77952320/" target="_blank" class="social-button linkedin-button">
+            <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+        </a>
+    </div>
+
+    <!-- Seção de Contato -->
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <p>Se você tiver dúvidas, sugestões ou precisar de mais informações sobre meus serviços, estou à disposição!</p>
+
+        <h3>Informações de Contato</h3>
+        <ul>
+            <li><strong>Telefone:</strong> (11) 97824-2396</li>
+            <li><strong>Email:</strong> corretormarlosgomes@gmail.com</li>
+            <li><strong>Endereço:</strong> Rua Benfeitor João Elias Camello, 41, Centro - Poá, SP</li>
+            <li><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 10h às 16h</li>
+        </ul>
+    </div>
+
+    <!-- Seção de Envio de Mensagem -->
+    <div class="pers-contato">
+        <h3>Envie uma Mensagem</h3>
+        <form action="mensagem-enviada.html" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+
+    <!-- Botão do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5511978242396" class="whatsapp-button" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp" />
+    </a>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Marlos Gomes / Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
